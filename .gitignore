@@ -1,12 +1,14 @@
-# Ignore everything in the directories
+# Ignore everything in the directories...
 /data/*
 /encodings/*
 /models/*
 
-# Except for .gitkeep files
+# ...except for sample files
 !/data/.gitkeep
-!/encodings/.gitkeep
-!/models/.gitkeep
+!/encodings/encoding-ml-latest-small-sample.pkl
+!/encodings/encoding-ml-32m-sample.pkl
+!/models/model-ml-latest-small-sample.pth
+!/models/model-ml-32m-sample.pth
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
