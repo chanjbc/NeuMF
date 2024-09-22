@@ -1,9 +1,9 @@
 # NeuMF Movie Recommendation System
 
+This repository contains a PyTorch implementation of the Neural Matrix Factorization (NeuMF) model, introduced by [Xiangnan He et al.](http://dx.doi.org/10.1145/3038912.3052569), for movie recommendations using the MovieLens dataset. The project includes scripts for data preparation, model training, evaluation, and inference.
+
 ## Authors
 - [James Chan](https://github.com/chanjbc)
-
-This repository contains a PyTorch implementation of the Neural Matrix Factorization (NeuMF) model, introduced by [Xiangnan He et al.](http://dx.doi.org/10.1145/3038912.3052569), for movie recommendations using the MovieLens dataset. The project includes scripts for data preparation, model training, evaluation, and inference.
 
 
 ## Table of Contents
