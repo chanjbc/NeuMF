@@ -57,8 +57,8 @@ This repository contains a PyTorch implementation of the Neural Matrix Factoriza
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/neumf-movie-recommendation.git
-   cd neumf-movie-recommendation
+   git clone https://github.com/chanjbc/neumf.git
+   cd neumf
    ```
 
 2. Install the required packages:
