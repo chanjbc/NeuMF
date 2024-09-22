@@ -120,8 +120,8 @@ python Inference.py <dataset> <top_n> <encoding_file> <movies_file>
 Replace the placeholders with the appropriate file paths:
 - `<dataset>`: dataset used (i.e., `ml-32m` or `ml-latest-small`)
 - `<top_n>`: number of recommendations to return (e.g., 20)
-- `<encoding_path>`: encoder file (e.g., `encoding-ml-32m-2024-09-21-12-00-00.pkl`)
-- `<model_path>`: trained model file (e.g., `model-ml-32m-2024-09-21-12-00-00.pth`)
+- `<encoding_file>`: encoder file (e.g., `encoding-ml-32m-2024-09-21-12-00-00.pkl`)
+- `<model_file>`: trained model file (e.g., `model-ml-32m-2024-09-21-12-00-00.pth`)
 
 Two encoding files, `encoding-ml-latest-small-sample.pkl` and `encoding-ml-32m-sample.pkl`, as well as their corresponding model files `model-ml-latest-small-sample.pth` and `model-ml-32m-sample.pth`, are available for testing. To use these files, first ensure that the corresponding dataset has been downloaded with `Download.py`, and then run either of these commands:
 
