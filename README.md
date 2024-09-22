@@ -3,7 +3,7 @@
 ## Authors
 - [James Chan](https://github.com/chanjbc)
 
-This repository contains a PyTorch implementation of the Neural Matrix Factorization (NeuMF) model for movie recommendations using the MovieLens dataset. The project includes scripts for data preparation, model training, evaluation, and inference.
+This repository contains a PyTorch implementation of the Neural Matrix Factorization (NeuMF) model, introduced by [Xiangnan He et al.](http://dx.doi.org/10.1145/3038912.3052569), for movie recommendations using the MovieLens dataset. The project includes scripts for data preparation, model training, evaluation, and inference.
 
 
 ## Table of Contents
@@ -32,7 +32,8 @@ This repository contains a PyTorch implementation of the Neural Matrix Factoriza
 ```
 .
 ├── data/
-|   └── 
+|   ├── ml-latest-small
+|   └── ml-32m
 ├── models/
 ├── encodings/
 ├── Download.py
@@ -90,13 +91,14 @@ The ml-latest-small dataset (containing 100,000 ratings) trains significantly fa
 To generate movie recommendations for a new user, use the `Inference.py` script:
 
 ```
-python Inference.py <model_path> <encoding_path> <movies_file>
+python Inference.py <model_file> <top_n> <encoding_file> <movies_file>
 ```
 
 Replace the placeholders with the appropriate file paths:
-- `<model_path>`: Path to the trained model file (e.g., `./models/model-ml-32m-2024-09-21-12-00-00.pth`)
-- `<encoding_path>`: Path to the encoder file (e.g., `./encodings/encoding-ml-32m-2024-09-21-12-00-00.pkl`)
-- `<movies_file>`: Path to the movies CSV file (e.g., `./data/ml-32m/movies.csv`)
+- `<dataset>`:  dataset used (i.e., `ml-32m` or `ml-latest-small`)
+- `<top_n>`: number of recommendations to return (e.g., 20)
+- `<encoding_path>`: encoder file (e.g., `encoding-ml-32m-2024-09-21-12-00-00.pkl`)
+- `<model_path>`: trained model file (e.g., `model-ml-32m-2024-09-21-12-00-00.pth`)
 
 ## File Descriptions
 
