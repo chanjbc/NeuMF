@@ -25,11 +25,11 @@ class UserItemRatingDataset(Dataset):
         self.ratings_frame["userId"] = self.ratings_frame["userId"].map(self.user_encoder)
         self.ratings_frame["movieId"] = self.ratings_frame["movieId"].map(self.item_encoder)
         
-        # Split into train and test sets
+        # split into train and test sets
         print("Performing train/test split...")
         self.train_ratings, self.test_ratings = self._split_train_test()
         
-        # Extract train and test data
+        # extract train and test data
         print("Extracting train/test data...")
         self.train_user_item_dict = self._extract_user_item_dict(self.train_ratings)
         self.test_user_item_dict = self._extract_user_item_dict(self.test_ratings)
