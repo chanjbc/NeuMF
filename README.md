@@ -53,6 +53,15 @@ This repository contains a PyTorch implementation of the Neural Matrix Factoriza
 └── README.md
 ```
 
+## File Descriptions
+
+- `Download.py`: Script to download and extract the MovieLens dataset.
+- `PrepareData.py`: Contains functions for data preparation and loading.
+- `NeuMF.py`: Defines the Neural Matrix Factorization model architecture.
+- `TrainEvaluate.py`: Includes functions for training and evaluating the model.
+- `main.py`: The main script for running the entire training process.
+- `Inference.py`: Script for generating movie recommendations for new users.
+
 ## Installation
 
 1. Clone this repository:
@@ -134,15 +143,6 @@ Two encoding files, `encoding-ml-latest-small-sample.pkl` and `encoding-ml-32m-s
    ```bash
    python Inference.py ml-32m 20 encoding-ml-32m-sample.pkl model-ml-32m-sample.pth
    ```
-
-## File Descriptions
-
-- `Download.py`: Script to download and extract the MovieLens dataset.
-- `PrepareData.py`: Contains functions for data preparation and loading.
-- `NeuMF.py`: Defines the Neural Matrix Factorization model architecture.
-- `TrainEvaluate.py`: Includes functions for training and evaluating the model.
-- `main.py`: The main script for running the entire training process.
-- `Inference.py`: Script for generating movie recommendations for new users.
 
 ## Contributing
 
