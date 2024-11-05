@@ -10,12 +10,12 @@ This repository contains a PyTorch implementation of the Neural Matrix Factoriza
 
 1. [Requirements](#requirements)
 2. [Project Structure](#project-structure)
-3. [Installation](#installation)
-4. [Usage](#usage)
+   - [File Descriptions](#file-descriptions)
+4. [Installation](#installation)
+5. [Usage](#usage)
    - [Downloading the Dataset](#downloading-the-dataset)
    - [Training the Model](#training-the-model)
    - [Running Inference](#running-inference)
-5. [File Descriptions](#file-descriptions)
 6. [Contributing](#contributing)
 7. [License](#license)
 
@@ -53,7 +53,7 @@ This repository contains a PyTorch implementation of the Neural Matrix Factoriza
 └── README.md
 ```
 
-## File Descriptions
+### File Descriptions
 
 - `Download.py`: Script to download and extract the MovieLens dataset.
 - `PrepareData.py`: Contains functions for data preparation and loading.
